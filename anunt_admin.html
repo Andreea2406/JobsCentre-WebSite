@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Titlu anunt</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
+  <style>
+
+    .button1{
+      width:102px;
+      height: 20px;
+      line-height: 42px;
+      top:0px;
+      text-align: center;
+
+      font-family: tahoma;
+      margin-top: 12px;
+      margin-right: 12px;
+      right:120px;
+      position: absolute;
+      margin-bottom: 9.6rem;
+      padding-bottom: 30px;
+      color: rgb(51, 180, 194);
+
+    }
+    .button2{
+      width:102px;
+      height: 20px;
+      line-height: 32px;
+      top:0;
+      text-align: center;
+
+      font-family: tahoma;
+      margin-top: 12px;
+      margin-right: 12px;
+      right:0;
+      position: absolute;
+      margin-bottom: 9.6rem;
+      padding-bottom: 30px;
+      border-radius: 25px;
+      background-color: #ffffff;
+      color: #33b4c2;
+      border: 4px solid #f3ccd5;
+
+    }
+
+    .buttonborder {
+      background-color: white;
+      color: black;
+      border: 2px solid #fdb9ff;
+    }
+    .button2:hover {
+      background-color: #f3ccd5;
+      color: #33b4c2;
+    }
+  </style>
+</head>
+
+<div class="grid-x grid-padding-x">
+  <div class="columns small-9 large-10"><a href="paginaPrincipala.php"> <img src="/images/logoSite2.jfif"> </a></div>
+  <div class="columns small-3 large-2" style="text-align: center; ">
+
+    <ul class="dropdown menu " data-dropdown-menu>
+      <li>
+        <a   style="background-color: #33b4c2; opacity: 100%;font-size: 20px;border-radius: 20px;color:white;margin-top: 10px;"href="#">Nume admin</a>
+        <ul class="menu">
+          <li><a href="pagina_anunturi_admin.html">Lista anunturi</a></li>
+          <li><a href="lista_aplicanti_admin.html">Lista candidati</a></li>
+          <li><a href="lista_companii_admin.html">Lista companii</a></li>
+          <li><a href="mesaje_admin.php">Mesaje utilizatori</a></li>
+
+          <li><a href="paginaPrincipala.php">Deconecteaza-te</a></li>
+        </ul>
+      </li>
+    </ul>
+
+
+  </div>
+</div>
+</div>
+<div class="grid-x grid-padding-x" class="column  large-12" style="background-image:url('images/anunt.jpg' ) ;background-size: cover;background-attachment: fixed" >
+  <br><br><br>
+
+  <br>
+</div>
+<div class="grid-x grid-padding-x" style="background-image:url('images/anunt.jpg' ) ;background-size: cover;background-attachment: fixed" >
+  <div class="small-12 large-3 cell"
+       style="background-image:url('images/anunt.jpg' ) ;background-size: cover;background-attachment: fixed;border-color: #33b4c2;border-width:2px;border-style:solid;border-radius: 50px;">
+
+    <br>
+    <img align="center" class="float-center" class="button"  src="images/poza_frima.PNG" style="width:90px; height:150px; align:center ;margin-bottom: 50px;  border-radius:25px;">
+    <h1 style="color: #33b4c2">Criterii job:</h1>
+    <p><img src="images/hand.png"style="height: 30px;width: 30px;"></img>&nbsp;Salariu</p>
+    <p><img src="images/location.png"style="height: 30px;width: 30px;"></img>&nbsp;Locatie</p>
+    <p><img src="images/full-time-job.png"style="height: 30px;width: 30px;"></img>&nbsp;Full time/Part time/Remote</p>
+    <p>Cu/Fără experiență</p>
+    <p>Limbă cerută</p>
+
+
+  </div>
+  <div class="column large-1 " style="background-image:url('images/anunt.jpg' ) ;background-size: cover;background-attachment: fixed" ></div>
+
+  <div class="small-12 large-8 cell"
+       style="background-image:url('images/anunt.jpg' ) ;background-size: cover;background-attachment: fixed;border-color: #33b4c2;border-width:2px;border-style:solid;border-radius: 50px;">
+    <br>
+    <a data-open="exampleModal1"class="button3"  style="; background-color: #f3ccd5;margin-right: 10px; opacity: 100%;font-size: 25px;border-radius: 20px;color:#33b4c2;padding-left: 5px;padding-right: 15px;padding-bottom: 5px;padding-top: 5px"> Modifica anunt</a>
+
+    <div class="reveal" id="exampleModal1" data-reveal>
+      <a href="#" class="buttonborder" style="justify-content: right;margin-left: 95px;background: #f7e4e1;;border-width:2px;border-style:solid; float:left;border-style: solid ; opacity: 100%;font-size: 25px;border-radius: 20px;border: lightpink;  color:#33b4c2;padding-left: 10px;padding-right: 10px;padding-bottom: 10px;padding-top: 5px"> Salveaza </a><br><br><br>
+      <textarea id="5" name="5" rows="4" cols="50">
+                Titllu anunț
+                Numele firmei
+                Candidatul ideal
+                descriere candidat ideal
+                Descrierea jobului
+                descrierea jobului
+                Descrierea companiei
+              </textarea>
+
+
+
+
+    </div>
+    <br><br><br>
+    <h style=" float: left;color:black;margin-left: 25px;  text-align: left;font-size: 30px;">Titllu anunț</h><br><br>
+    <p style="float: left;margin-right: 190px; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Numele firmei</p>     <br>&nbsp;
+    <br>
+
+    <h  style=" float: left;color:black;;  text-align: left;font-size: 30px;">&nbsp;&nbsp;Candidatul ideal</h><br><br>
+    <p style="float: left;margin-left: 40px; text-align: left;">descriere candidat ideal</p>     <br>&nbsp;<br>
+    <h  style=" float: left;color:black;margin-left: 25px;  text-align: left;font-size: 30px;">Descrierea jobului</h><br><br><br>
+    <p style="float: left;margin-left: 40px; text-align: left;">descrierea jobului</p> <br>&nbsp;<br>
+    <h  style=" float: left;color:black;margin-left: 25px;  text-align: left;font-size: 30px;">Descrierea companiei</h><br><br>
+    <p style="float: left;margin-left: 40px; text-align: left;">descrierea companiei</p> <br>&nbsp;
+
+  </div>
+  <br><br><br>
+
+  <br>   <br><br><br>
+
+  <br>  <br><br><br><br>     <br><br>    <br><br>
+  <br><br><br><br>     <br><br>    <br><br>
+</div>
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
+</body>
+
+</html>

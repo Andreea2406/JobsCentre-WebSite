@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content=
+          "width=device-width, initial-scale=1.0">
+  <title>
+    Survey
+  </title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
+
+  <style>
+
+    /* Styling the Body element i.e. Color,
+    Font, Alignment */
+    body {
+      background-color: #33b4c2;
+      font-family: Verdana;
+      text-align: center;
+    }
+
+    /* Styling the Form (Color, Padding, Shadow) */
+    form {
+      background-color: #fff;
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 30px 20px;
+      box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Styling form-control Class */
+    .form-control {
+      text-align: left;
+      margin-bottom: 25px;
+    }
+
+    /* Styling form-control Label */
+    .form-control label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    /* Styling form-control input,
+    select, textarea */
+    .form-control input,
+    .form-control select,
+    .form-control textarea {
+      border: 1px solid #777;
+      border-radius: 2px;
+      font-family: inherit;
+      padding: 10px;
+      display: block;
+      width: 95%;
+    }
+
+    /* Styling form-control Radio
+    button and Checkbox */
+    .form-control input[type="radio"],
+    .form-control input[type="checkbox"] {
+      display: inline-block;
+      width: auto;
+    }
+
+    /* Styling Button */
+    button {
+      background-color: #33b4c2;
+      border: 1px solid #777;
+      border-radius: 2px;
+      font-family: inherit;
+      font-size: 21px;
+      display: block;
+      width: 100%;
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+<h1>Găsește-ți jobul dorit în funcție de calitățiile tale!</h1>
+
+<!-- Create Form -->
+<form id="form">
+
+  <!-- Details -->
+  <div class="form-control">
+    <label for="name" id="label-name">
+      Nume
+    </label>
+
+    <!-- Input Type Text -->
+    <input type="text"
+           id="name"
+           placeholder="Introduceți nume" /><br>
+    <label for="name" id="label-prenume">
+      Prenume
+    </label>
+    <input type="text"
+           id="prename"
+           placeholder="Introduceți prenume" />
+  </div>
+
+  <div class="form-control">
+    <label for="email" id="label-email">
+      Email
+    </label>
+
+    <!-- Input Type Email-->
+    <input type="email"
+           id="email"
+           placeholder="email@yahoo.com" />
+  </div>
+
+  <div class="form-control">
+    <label for="age" id="label-age">
+      Varsta
+    </label>
+
+    <!-- Input Type Text -->
+    <input type="text"
+           id="age"
+           placeholder="Introduceti varsta" />
+  </div>
+  <div class="form-control">
+    <label for="age" id="profil_lic">
+      Liceu
+    </label>
+
+    <!-- Input Type Text -->
+    <input type="text"
+           id="profil_liceu"
+           placeholder="Introduceti profilul liceului termiant" />
+  </div>
+  <div class="form-control">
+    <label for="age" id="faculta">
+     Facultate
+    </label>
+
+    <!-- Input Type Text -->
+    <input type="text"
+           id="profil_faculta"
+           placeholder="Introduceti specializarea facultatii" />
+  </div>
+  <div class="form-control">
+    <label for="age" id="limbi">
+      Limbi vorbite
+    </label>
+
+    <!-- Input Type Text -->
+    <input type="text"
+           id="limbistraine"
+           placeholder="Introduceti limbiile straine cunoscute" />
+  </div>
+  <div class="form-control">
+    <label for="role" id="label-role">
+      Care optiune te descrie cel mai bine?
+    </label>
+
+    <!-- Dropdown options -->
+    <select name="role" id="role">
+      <option value="student">Student</option>
+      <option value="intern">Șomer</option>
+      <option value="professional">
+        Angajat
+      </option>
+      <option value="other">Alta</option>
+    </select>
+  </div>
+
+  <div class="form-control">
+    <label>
+     Tipul jobului
+    </label>
+
+    <!-- Input Type Radio Button -->
+    <label for="recommed-1">
+      <input type="radio"
+             id="recommed-1"
+             name="recommed">Full-time</input>
+    </label>
+    <label for="recommed-2">
+      <input type="radio"
+             id="recommed-2"
+             name="recommed">Part-time</input>
+    </label>
+    <label for="recommed-3">
+      <input type="radio"
+             id="recommed-3"
+             name="recommed">Intership/Voluntariat</input>
+    </label>
+    <label for="recommed-4">
+      <input type="radio"
+             id="recommed-4"
+             name="recommed">Proiect/Sezonier</input>
+    </label>
+  </div>
+
+  <div class="form-control">
+    <label>Care sunt categoriile de job care te intereseaza>
+      <small>(Poti selecta mai multe)</small>
+    </label>
+    <!-- Input Type Checkbox -->
+    <label for="inp-1">
+      <input type="checkbox"
+           id="inp-1"  name="inp">Achizitii, Logistica, Aprovizionare</input></label>
+    <label for="inp-2">
+      <input type="checkbox"
+             id="inp-2" name="inp">Auto, Moto</input></label>
+    <label for="inp-3">
+      <input type="checkbox"
+             id="inp-3" name="inp">Contabilitate</input></label>
+    <label for="inp-4">
+      <input type="checkbox"
+             id="inp-4"    name="inp">Fundatii, Voluntariat, ONG </input></label>
+    <label for="inp-5">
+      <input type="checkbox"
+             id="inp-5" name="inp">IT Software, Hardware </input></label>
+    <label for="inp-6">
+      <input type="checkbox"
+             id="inp-6" name="inp">Medicina</input></label>
+    <label for="inp-7">
+      <input type="checkbox"
+             id="inp-7"name="inp">Transport</input></label>
+    <label for="inp-8">
+      <input type="checkbox"
+             id="inp-8" name="inp">Angular</input></label>
+    <label for="inp-9">
+      <input type="checkbox"
+             id="inp-9" name="inp">Juridic</input></label>
+    <label for="inp-10">
+      <input type="checkbox"
+             id="inp-10"      name="inp">Marketing</input></label>
+    <label for="inp-11">
+      <input type="checkbox"
+             id="inp-11" name="inp">Constructii</input></label>
+    <label for="inp-12">
+      <input type="checkbox"
+             id="inp-12"name="inp">Turism</input></label>
+    <label for="inp-13">
+      <input type="checkbox"
+             id="inp-13" name="inp">Educatie/Training</input></label>
+    <label for="inp-14">
+      <input type="checkbox"
+             id="inp-14" name="inp">Inginerie</input></label>
+    <label for="inp-15">
+      <input type="checkbox"
+             id="inp-15"      name="inp">Chimie</input></label>
+    <label for="inp-16">
+      <input type="checkbox"
+             id="inp-16" name="inp">Banci</input></label>
+    <label for="inp-17">
+      <input type="checkbox"
+             id="inp-17"name="inp">Raadio/ Televiziune</input></label>
+    <label for="inp-18">
+      <input type="checkbox"
+             id="inp-18" name="inp">Arhitectura, Design, Proiectare </input></label>
+    <label for="inp-19">
+      <input type="checkbox"
+             id="inp-19" name="inp">Farmacie</input></label>
+    <label for="inp-20">
+      <input type="checkbox"
+             id="inp-20"      name="inp">Textila</input></label>
+    <label for="inp-21">
+      <input type="checkbox"
+             id="inp-21"      name="inp">Sport/ Frumusete</input></label>
+    <label for="inp-22">
+      <input type="checkbox"
+             id="inp-22"      name="inp">Paza/Protectie</input></label>
+    <label for="inp-23">
+      <input type="checkbox"
+             id="inp-23"      name="inp">Nava/Aeronutica</input></label>
+    <input type="radio" name="addLive" value="others" id="showAddLiveOthers">Alta<br>
+    <input type="text" name ="addLiveOthers" id="addLiveOthers">
+  </div>
+
+  <div class="form-control">
+    <label for="comment">
+      Alte detalii
+    </label>
+
+    <!-- multi-line text input control -->
+    <textarea name="comment" id="comment"
+              placeholder="Enter your comment here">
+			</textarea>
+  </div>
+
+  <!-- Multi-line Text Input Control -->
+  <a href="prima_pag_candidat.php" class="button3" style=" background-color: #f7e4e1; opacity: 100%;font-size: 25px;border-radius: 20px;color:#33b4c2;padding-left:5px;padding-right:5px;padding-bottom: 5px;padding-top: 5px">Submit </a>
+
+ </a>
+
+</form>
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

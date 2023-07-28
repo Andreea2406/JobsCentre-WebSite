@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intra in cont</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation for Sites</title>
+
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
+
+  <style>
+    body {font-family: Arial;}
+
+    /* Style the tab */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 8px;
+      border: 1px solid #ccc;
+      border-top: none; }
+    .container1{
+
+      position:absolute;
+      left:50%;
+
+      top:60%;
+      height: 900px;
+      width: 600px;
+
+      transform: translate(-50%,-50%)
+    }
+
+  </style>
+</head>
+<body style="background-image:url('images/wd.jpeg' ) ;background-size: cover;background-attachment: fixed">
+<div class="grid-x grid-padding-x">
+  <div class="columns small-12 large-2">
+    <a href="paginaPrincipala.php" style="width:10px;height: 10px;"> <img src="/images/mylogo.jpg"> </a>
+  </div>
+
+</div>
+<div class="grid-x grid-padding-x">
+  <div class="columns small-12 large-12">
+    <h1 style=" text-align: center;color: #33b4c2;padding-left:70px;font-weight:bold">Intră în contul tău  </h1></div>
+
+
+</div>
+<div class="grid-x grid-padding-x">
+  <div class="columns small-6 large-12">
+
+
+
+    <div class="container1" style=" background-color: rgb(226,194,198);padding-top: 2em;opacity: 82%;padding-right: 10px;  border-radius: 25px ;text-align:center;width:500px ;height:400px;padding-left: 20px; border-radius: 25px ;  ">
+
+
+
+      <div class="tab">
+
+        <button class="tablinks" onclick="openCity(event, 'Candidat')">Candidat</button>
+        <button class="tablinks" onclick="openCity(event, 'Companie')">Companie</button>
+        <button class="tablinks" onclick="openCity(event, 'Admin')">Admin</button>
+
+      </div>
+
+      <div id="Candidat" class="tabcontent">
+        <p style=" text-align: center;">Actualizează-ți CV-ul și aplică la joburi</p>
+        <form name="contact_form" id="contact_form" method="post" action="index.php">
+          <p class="hide"><input type="text" name="mode" value="loginare" ></p>
+          <div class="row">
+            <p class="hide"><input type="text" name="mode" value="loginare" ></p>
+            <div class="columns large-centered large-5 medium-5 medium-centered small-12 small-centered cell">
+              Username: <input type="text" name="username" >
+            </div>
+            <div class="columns large-centered large-5 medium-5 medium-centered small-12 small-centered cell">
+              Parolaa: <input type="password" name="user_password">
+            </div>
+          </div>
+          <!--                <label >Email:</label>-->
+          <!--                <input type="text" maxlength="15" placeholder="ex. email@domain.ro" ><br><br>-->
+          <!--                <label >Parola:</label>-->
+          <!--                <input type="text" maxlength="15" placeholder="Parola" >-->
+
+          <div class="large-8 medium-8 small-8 columns">
+            <button type="submit" class="success button" name="submit">Logare</button>
+          </div>
+<!--          </fieldset>-->
+        </form>
+
+        <p style="float:right"><a href="creare_cont_candidat.html">Creare cont</a></p>
+        <br>
+
+      </div>
+
+      <div id="Companie" class="tabcontent">
+        <p style=" text-align: center;">Găsește talentele de care ai nevoie</p>
+        <form name="contact_form1" id="contact_form1" method="post" action="index.php">
+
+          <div class="row">
+
+            <p class="hide"><input type="text" name="mode" value="loginare" ></p>
+            <div class="columns large-centered large-5 medium-5 medium-centered small-12 small-centered cell">
+              Username: <input type="text" name="username" >
+            </div>
+            <div class="columns large-centered large-5 medium-5 medium-centered small-12 small-centered cell">
+              Parolaa: <input type="password" name="user_password">
+            </div>
+          </div>
+          <!--                <label >Username:</label>-->
+          <!--                <input type="text" maxlength="15" placeholder="username" ><br><br>-->
+          <!--                <label >Parola:</label>-->
+          <!--                <input type="text" maxlength="15" placeholder="Parola" >-->
+
+          <div class="large-8 medium-8 small-8 columns">
+            <button type="submit" class="success button" name="submit">Logare</button>
+          </div>
+          </fieldset>
+        </form>
+        <p style="float:right"><a href="creare_cont_companie.html">Creare cont</a></p>
+        <br>
+
+      </div>
+      <div id="Admin" class="tabcontent">
+
+        <form name="contact_form2" id="contact_form2" method="post" action="index.php">
+
+          <div class="row">
+            <p class="hide"><input type="text" name="mode" value="loginare" ></p>
+            <div class="columns large-centered large-5 medium-5 medium-centered small-12 small-centered cell">
+              Username: <input type="text" name="username" >
+            </div>
+            <div class="columns large-centered large-5 medium-5 medium-centered small-12 small-centered cell">
+              Parolaa: <input type="password" name="user_password">
+            </div>
+          </div>
+          <!--                <label >Username:</label>-->
+          <!--                <input type="text" maxlength="15" placeholder="username" ><br><br>-->
+          <!--                <label >Parola:</label>-->
+          <!--                <input type="text" maxlength="15" placeholder="Parola" >-->
+
+
+          <div class="large-8 medium-8 small-8 columns">
+            <button type="submit" class="success button" name="submit">Logare</button>
+          </div>
+          </fieldset>
+        </form>
+      </div>
+
+
+<!--        <p style="float:right"><a href="creare_cont_companie.html">Creare cont</a></p>-->
+        <br>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+</script>
+
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
+</body>
+</html>

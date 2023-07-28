@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JobsCentre</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<div class="grid-x grid-padding-x">
+    <div class="columns small-9 large-10"><a href="paginaPrincipala.php"> <img src="/images/logoSite2.jfif"> </a></div>
+    <div class="columns small-3 large-2" style="text-align: center; ">
+
+        <ul class="dropdown menu " data-dropdown-menu>
+            <li>
+                <a   style="background-color: #33b4c2; opacity: 100%;font-size: 20px;border-radius: 20px;color:white;margin-top: 10px;"href="#">Nume admin</a>
+                <ul class="menu">
+                    <li><a href="read">Lista anunturi</a></li>
+                    <li><a href="read_candidati.php">Lista candidati</a></li>
+                    <li><a href="read_companii.php">Lista companii</a></li>
+                    <li><a href="mesaje_admin.php">Mesaje utilizatori</a></li>
+
+                    <li><a href="paginaPrincipala.php">Deconecteaza-te</a></li>
+                </ul>
+            </li>
+        </ul>
+
+
+    </div>
+</div>
+<div class="grid-x grid-padding-x"style="background-image:url('images/aplic.jpg' ) ;background-size: cover;background-attachment: fixed" >
+    <div class="columns small-8 large-10"style="background-image:url('images/aplic.jpg' ) ;background-size: cover;background-attachment: fixed">
+
+        <div class="columns small-1 large-6"style="background-image:url('images/aplic.jpg' ) ;background-size: cover;background-attachment: fixed">
+            <br><br><br>
+            <input type="text" placeholder="Cauta companie dupa nume" style="padding-left:10px;font-size:25pt;border-radius: 25px; margin-top: 50px;margin-bottom: 40px;";>
+            <a href="#" class="button"  style="background-color: #33b4c2; opacity: 100%;font-size: 20px;border-radius: 20px;color:white;padding-left: 10px;padding-right: 10px;padding-bottom: 5px;padding-top: 5px"> Caută </a>
+            <a href="adauga_companie_admin.html" class="button"  style="background-color: #33b4c2; opacity: 100%;font-size: 20px;border-radius: 20px;color:white;padding-left: 10px;padding-right: 10px;padding-bottom: 5px;padding-top: 5px">Adauga companie </a>
+            <a href="read_companii.php" class="button"  style="background-color: #33b4c2; opacity: 100%;font-size: 20px;border-radius: 20px;color:white;padding-left: 10px;padding-right: 10px;padding-bottom: 5px;padding-top: 5px"> Vizualizare companii </a>
+
+            <p></p>
+
+        </div>
+
+
+
+    </div>
+
+
+
+</div>
+
+<div class="row">
+    <div class="columns">
+        <div class="table-scroll">
+            <table>
+                <thead>
+                <tr>
+                    <th>Nume companie</th>
+                    <th>Locatie</th>
+                    <th>Email</th>
+                    <th>Alte locatii</th>
+                    <th>Numar de telefon mobil</th>
+                    <th>Numar de telefon fix</th>
+                    <th></th>
+                    <th></th>
+
+                    <th></th>
+
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Logiscool</td>
+                    <td>Baia Mare</td>
+                    <td>email@yahoo.com</td>
+                    <td>Oradea,Cluj-Napoca, Bistrita,Brasov</td>
+                    <td>074523768</td>
+                    <td>-</td>
+                    <td><a href="#" class="button3"  style=" background-color: #f7e4e1; opacity: 100%;font-size: 25px;border-radius: 20px;color:#33b4c2;padding-left:5px;padding-right:5px;padding-bottom: 5px;padding-top: 5px">Sterge candidat</a></td>
+                    <td><p><a data-open="exampleModal2"class="button3"  style="float: right; background-color: #f7e4e1;margin-right: 10px; opacity: 100%;font-size: 25px;border-radius: 20px;color:#33b4c2;padding-left: 5px;padding-right: 15px;padding-bottom: 5px;padding-top: 5px"> Editeaza</a></p>
+
+                        <div class="reveal" id="exampleModal2" data-reveal>
+                            <a href="#" class="buttonborder" style="justify-content: right;margin-left: 95px;background: #f7e4e1;;border-width:2px;border-style:solid; float:left;border-style: solid ; opacity: 100%;font-size: 25px;border-radius: 20px;border: lightpink;  color:#33b4c2;padding-left: 10px;padding-right: 10px;padding-bottom: 10px;padding-top: 5px"> Salveaza </a><br><br><br>
+                            <textarea id="p2" name="p2" rows="4" cols="50">
+                Nume companie
+                Oras
+                Email
+                Alte locatii
+                Numar de telefon
+                Numar de telefon fix
+              </textarea>
+
+
+
+                        </div></td>
+
+
+
+                    <td><a href="mailto:someone@example.com" class="buttonborder" style="justify-content: right;opacity: 100%;   margin-left: 95px;background: #f7e4e1;;border-width:2px;border-style:solid; float:left;border-style: solid ; opacity: 100%;font-size: 25px;border-radius: 20px;border: lightpink;  color:#33b4c2;padding-left: 10px;padding-right: 10px;padding-bottom: 10px;padding-top: 5px">Contacteaza </a> </td>
+
+
+                </tr>
+                <tr>
+                    <td>Nume frima</td>
+                    <td>Bacau</td>
+                    <td>email@yahoo.com</td>
+
+                    <td>Alte locatii frima</td>
+                    <td>0746781223</td>
+                    <td>-</td>
+                    <td>   <a href="#" class="button3"  style=" background-color: #f7e4e1; opacity: 100%;font-size: 25px;border-radius: 20px;color:#33b4c2;padding-left:5px;padding-right:5px;padding-bottom: 5px;padding-top: 5px">Sterge candidat </a></td>
+                    <td><p><a data-open="exampleModal3"class="button3"  style="float: right; background-color: #f7e4e1;margin-right: 10px; opacity: 100%;font-size: 25px;border-radius: 20px;color:#33b4c2;padding-left: 5px;padding-right: 15px;padding-bottom: 5px;padding-top: 5px"> Editeaza</a></p>
+
+                        <div class="reveal" id="exampleModal3" data-reveal>
+                            <a href="#" class="buttonborder" style="justify-content: right;margin-left: 95px;background: #f7e4e1;;border-width:2px;border-style:solid; float:left;border-style: solid ; opacity: 100%;font-size: 25px;border-radius: 20px;border: lightpink;  color:#33b4c2;padding-left: 10px;padding-right: 10px;padding-bottom: 10px;padding-top: 5px"> Salveaza </a><br><br><br>
+                            <textarea id="p3" name="p3" rows="4" cols="50">
+                Nume companie
+                Oras
+                Email
+                Alte locatii
+                Numar de telefon
+                Numar de telefon fix
+              </textarea>
+
+
+
+                        </div></td>
+
+                    <td>    <a href="mailto:someone@example.com" class="buttonborder" style="justify-content: right;opacity: 100%;   margin-left: 95px;background: #f7e4e1;;border-width:2px;border-style:solid; float:left;border-style: solid ; opacity: 100%;font-size: 25px;border-radius: 20px;border: lightpink;  color:#33b4c2;padding-left: 10px;padding-right: 10px;padding-bottom: 10px;padding-top: 5px">Contacteaza </a>
+
+                </tr>
+                <tr>
+                    <td>Nume frima</td>
+                    <td> Sibiu</td>
+                    <td>email@yahoo.com</td>
+                    <td>Alte locatii frima</td>
+                    <td>0742742498</td>
+                    <td>-</td>
+                    <td>   <a href="#" class="button3"  style=" background-color: #f7e4e1; opacity: 100%;font-size: 25px;border-radius: 20px;color:#33b4c2;padding-left:5px;padding-right:5px;padding-bottom: 5px;padding-top: 5px">Sterge candidat </a></td>
+                    <td><p><a data-open="exampleModal6"class="button3"  style="float: right; background-color: #f7e4e1;margin-right: 10px; opacity: 100%;font-size: 25px;border-radius: 20px;color:#33b4c2;padding-left: 5px;padding-right: 15px;padding-bottom: 5px;padding-top: 5px"> Editeaza</a></p>
+
+                        <div class="reveal" id="exampleModal6" data-reveal>
+                            <a href="#" class="buttonborder" style="justify-content: right;margin-left: 95px;background: #f7e4e1;;border-width:2px;border-style:solid; float:left;border-style: solid ; opacity: 100%;font-size: 25px;border-radius: 20px;border: lightpink;  color:#33b4c2;padding-left: 10px;padding-right: 10px;padding-bottom: 10px;padding-top: 5px"> Salveaza </a><br><br><br>
+                            <textarea id="p6" name="p6" rows="4" cols="50">
+                Nume companie
+                Oras
+                Email
+                Alte locatii
+                Numar de telefon
+                Numar de telefon fix
+              </textarea>
+
+
+
+                        </div></td>
+
+                    <td>    <a href="mailto:someone@example.com" class="buttonborder" style="justify-content: right;opacity: 100%;   margin-left: 95px;background: #f7e4e1;;border-width:2px;border-style:solid; float:left;border-style: solid ; opacity: 100%;font-size: 25px;border-radius: 20px;border: lightpink;  color:#33b4c2;padding-left: 10px;padding-right: 10px;padding-bottom: 10px;padding-top: 5px">Contacteaza </a>
+
+
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<nav aria-label="Pagination">
+    <ul class="pagination text-center">
+        <li class="pagination-previous disabled">Previous</li>
+        <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+        <li><a href="#" aria-label="Page 2">2</a></li>
+        <li><a href="#" aria-label="Page 3">3</a></li>
+        <li><a href="#" aria-label="Page 4">4</a></li>
+        <li class="ellipsis"></li>
+        <li><a href="#" aria-label="Page 12">12</a></li>
+        <li><a href="#" aria-label="Page 13">13</a></li>
+        <li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
+    </ul>
+</nav>
+
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

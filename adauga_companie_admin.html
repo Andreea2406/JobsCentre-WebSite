@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adaugare companie </title>
+  <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/foundation.css">
+
+</head>
+
+<body>
+
+<div class="grid-x grid-padding-x" >
+  <div class="columns small-9 large-10"><a href="paginaPrincipala.php"> <img src="/images/logoSite2.jfif"> </a></div>
+  <div class="columns small-3 large-2" style="text-align: center; ">
+
+    <ul class="dropdown menu " data-dropdown-menu>
+      <li>
+        <a   style="background-color: #33b4c2; opacity: 100%;font-size: 20px;border-radius: 20px;color:white;margin-top: 10px;"href="#">Nume admin</a>
+        <ul class="menu">
+          <!--          <li><a href="pagina_anunturi_admin.html">Lista anunturi</a></li>-->
+          <li><a href="read.php">Lista anunturi</a></li>
+
+          <li><a href="lista_aplicanti_admin.html">Lista candidati</a></li>
+          <li><a href="lista_companii_admin.html">Lista companii</a></li>
+          <li><a href="mesaje_admin.php">Mesaje utilizatori</a></li>
+
+          <li><a href="paginaPrincipala.php">Deconecteaza-te</a></li>
+        </ul>
+      </li>
+    </ul>
+
+
+  </div>
+</div>
+<br><br>
+<div class="grid-x grid-padding-x " style="background-image:url('images/bckg.jpg' ) ;background-size: cover;background-attachment: fixed;">
+  <div class="column small-12 large-12" style="background-image:url('images/bckg.jpg' ) ;background-size: cover;background-attachment: fixed;">
+
+  <form  name="adaugare" id="adaugare" method="post"  action="adauga_companie.php">
+    <div class="row">
+
+      <div class="columns large-centered large-5 medium-5 medium-centered small-12 small-centered cell">
+        Nume: <input type="text" name="nume"  id="nume">
+      </div>
+      <p class="hide"><input type="text" name="mode" value="adaugare" ></p>
+      <div class="columns large-centered large-5 medium-5 medium-centered small-12 small-centered cell">
+        Locatie: <input type="text" name="locatie" id="locatie" >
+      </div>
+      <div class="columns large-centered large-5 medium-5 medium-centered small-12 small-centered cell">
+        Email: <input type="text" name="email" id="email" >
+      </div>
+
+      <div class="columns large-centered large-5 medium-5 medium-centered small-12 small-centered cell">
+        <label for="parola">Parola:</label> <input type="password" name="parola" id="parola" >
+      </div>
+
+
+      <div class="columns large-centered large-5 medium-5 medium-centered small-12 small-centered cell">
+        <button  type="submit" class="success button" name="submit" style="background-color: #fdb9ff">Adauga</button>
+
+      </div>
+
+    </div>
+
+
+  </form>
+    </br>
+    <a href="read.php" style="background-color: cornflowerblue" class="button">Inapoi</a>
+  </div>
+  </div>
+</div>
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
+

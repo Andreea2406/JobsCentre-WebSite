@@ -1,0 +1,1 @@
+I developed a web application called JobsCentre, designed to assist job seekers in finding employment opportunities and employers in recruiting new staff. For this solution, I utilized technologies such as PHP, HTML, and CSS.
